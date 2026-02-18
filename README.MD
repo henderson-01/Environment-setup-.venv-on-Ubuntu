@@ -86,7 +86,7 @@ Once you see **`(.venv)`** in your terminal, you can safely install tools:
 * **Install from a "recipe" list:** `pip install -r requirements.txt`
 
 > [!IMPORTANT]
-> Always ensure **`(.venv)`** is visible before typing `pip install`. If it's not there, you are installing to your main computer!
+> Always ensure **`(.venv)`** is visible before typing `pip install`. If it's not there, you are installing to your main computer system!
 
 ---
 
