@@ -111,7 +111,29 @@ deactivate
 | **Exit Sandbox** | `deactivate` | **`(.venv)`** disappears | When you're done |
 
 ---
+## 📂 Moving or Copying Projects
+You can have as many **Project folders** as you like on your desktop, each with its own `.venv`. However, virtual environments cannot be moved.
 
-## Disclaimer
+If you drag and drop your project folder to a new folder location, the `.venv` inside it will break because it remembers its old `"address-path"`
+
+**To move a project safely:**
+
+Delete the existing `.venv` in your current folder.
+
+Move your projects to the new folder location you have just made.
+
+Open a terminal in the **new folder location** and create a fresh environment and activate it 👇:
+
+```Bash
+# 1. Create the new environment
+python3 -m venv .venv
+
+# 2. Activate it immediately
+source .venv/bin/activate
+```
+>[!IMPORTANT]
+>Once activated, you will see `(.venv)` in your terminal. You can then re-install your libraries (e.g., `pip install pandas`), etc.
+___
+## ⚠️ Disclaimer 
 
 This project is provided "as-is" without any warranty of any kind. I am not responsible for any issues, data loss, or "explosions" (code-related or otherwise) that may occur from using this software. **Use it at your own risk.**
