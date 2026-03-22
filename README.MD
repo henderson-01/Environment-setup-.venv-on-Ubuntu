@@ -10,7 +10,6 @@ Run this **once** to ensure Ubuntu has the specific tool needed to build these "
 
 ```bash
 sudo apt update && sudo apt install python3-venv -y
-
 ```
 
 ---
@@ -23,13 +22,12 @@ You need a place for your code to live. You can change `my-project` to any name 
 
 ```bash
 mkdir my-project && cd my-project
-
 ```
 
 **Option B (File Manager):**
 
 1. Create a new folder (e.g., `my-project`).
-2. **Right-click** inside that folder and select **"Open in Terminal"**.
+2. **Right-click** on the folder and select **"Open in Terminal"**.
 
 ---
 
@@ -42,7 +40,6 @@ This creates a folder named `.venv` inside your project.
 
 ```bash
 python3 -m venv .venv
-
 ```
 
 > [!NOTE]
@@ -54,7 +51,6 @@ This tells your computer to use the sandbox instead of the global system.
 
 ```bash
 source .venv/bin/activate
-
 ```
 
 > [!TIP]
@@ -96,7 +92,6 @@ To leave the environment and return to your main system:
 
 ```bash
 deactivate
-
 ```
 
 ---
