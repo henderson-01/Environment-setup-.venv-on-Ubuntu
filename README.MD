@@ -1,4 +1,4 @@
-# 🐍 Python Environments on Ubuntu Guide 
+# 🐍 Python Environments on Ubuntu Guide
 
 This guide helps you create a **Virtual Environment**. Think of it as a "private container" for your project so its files don't get mixed up with your computer's main settings.
 
@@ -26,8 +26,8 @@ mkdir my-project && cd my-project
 
 **Option B (File Manager):**
 
-1. Create a new folder (e.g., `my-project`).
-2. **Right-click** on the folder and select **"Open in Terminal"**.
+- Create a new folder (e.g., `my-project`).
+- **Right-click** on the folder and select **"Open in Terminal"**.
 
 ---
 
@@ -36,7 +36,7 @@ mkdir my-project && cd my-project
 ### 1. Create the environment
 
 This creates a folder named `.venv` inside your project.
-*(Make sure your terminal prompt shows your project name, e.g., `~/my-project$ `)*
+*(Make sure your terminal prompt shows your project name, e.g., `~/my-project$`)*
 
 ```bash
 python3 -m venv .venv
@@ -62,14 +62,13 @@ source .venv/bin/activate
 
 VS Code needs to know to look inside your "sandbox" for your libraries.
 
-1. Open your project folder in VS Code.
-2. **Look for a popup:** In the bottom right, VS Code may ask: *"We noticed a new environment... would you like to select it?"* Click **Yes**.
-3. **Manual fix (if no popup):**
-* Press **`Ctrl + Shift + P`**.
-* Type **"Python: Select Interpreter"**.
-* Pick the version that shows the path **`./.venv/bin/python`**.
+- Open your project folder in VS Code.
+- **Look for a popup:** In the bottom right, VS Code may ask: *"We noticed a new environment... would you like to select it?"* Click **Yes**.
+- **Manual fix (if no popup):**
 
-
+- Press **`Ctrl + Shift + P`**.
+- Type **"Python: Select Interpreter"**.
+- Pick the version that shows the path **`./.venv/bin/python`**.
 
 ---
 
@@ -77,9 +76,9 @@ VS Code needs to know to look inside your "sandbox" for your libraries.
 
 Once you see **`(.venv)`** in your terminal, you can safely install tools:
 
-* **Install a tool (e.g., pandas):** `pip install pandas`
-* **Save your "recipe" list:** `pip freeze > requirements.txt`
-* **Install from a "recipe" list:** `pip install -r requirements.txt`
+- **Install a tool (e.g., pandas):** `pip install pandas`
+- **Save your "recipe" list:** `pip freeze > requirements.txt`
+- **Install from a "recipe" list:** `pip install -r requirements.txt`
 
 > [!IMPORTANT]
 > Always ensure **`(.venv)`** is visible before typing `pip install`. If it's not there, you are installing to your main computer system!
@@ -106,7 +105,9 @@ deactivate
 | **Exit Sandbox** | `deactivate` | **`(.venv)`** disappears | When you're done |
 
 ---
+
 ## 📂 Moving or Copying Projects
+
 You can have as many **Project folders** as you like on your desktop, each with its own `.venv`. However, virtual environments cannot be moved.
 
 If you drag and drop your project folder to a new folder location, the `.venv` inside it will break because it remembers its old `"address-path"`
@@ -126,9 +127,11 @@ python3 -m venv .venv
 # 2. Activate it immediately
 source .venv/bin/activate
 ```
+
 >[!IMPORTANT]
 >Once activated, you will see `(.venv)` in your terminal. You can then re-install your libraries (e.g., `pip install pandas`), etc.
-___
-## ⚠️ Disclaimer 
+---
 
-This is provided "as is" without warranty of any kind. I am not responsible for any damage, data loss, or issues caused by the use of this Information. **Use it at your own risk.** 
+## ⚠️ Disclaimer
+
+This is provided "as is" without warranty of any kind. I am not responsible for any damage, data loss, or issues caused by the use of this Information. **Use it at your own risk.**
